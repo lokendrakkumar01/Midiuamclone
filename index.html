@@ -1,395 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medium Clone</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Clone</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<link rel="stylesheet" href="style.css">
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <i class="fa-solid fa-bars menu-icon"></i>
+
+        <h1 class="logo">Medium</h1>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="app-btn">
+          <i class="fa-solid fa-mobile-screen"></i>
+          Get App
+        </button>
+
+        <button class="write-btn">
+          <i class="fa-regular fa-pen-to-square"></i>
+          Write
+        </button>
+
+        <i class="fa-regular fa-bell"></i>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <img
+          src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*gasaRNc3_X8K96F58zKyvw.jpeg"
+          class="profile"
+          alt="Profile avatar"
+        />
+      </div>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i>
+            Home
+          </li>
+
+          <li>
+            <i class="fa-regular fa-bookmark"></i>
+            Library
+          </li>
 
-</head>
+          <li>
+            <i class="fa-regular fa-user"></i>
+            Profile
+          </li>
+
+          <li>
+            <i class="fa-regular fa-file-lines"></i>
+            Stories
+          </li>
+
+          <li>
+            <i class="fa-solid fa-chart-column"></i>
+            Stats
+          </li>
+        </ul>
 
-<body>
+        <hr />
+
+        <div class="following">
+          <h3>Following</h3>
+
+          <p>Find writers and publications to follow.</p>
 
-<header class="navbar">
+          <a href="#"> See Suggestions </a>
+        </div>
+      </aside>
 
-<div class="nav-left">
+      <main class="content">
+        <div class="tabs">
+          <span class="active"> For You </span>
 
-<i class="fa-solid fa-bars menu-icon"></i>
+          <span> Featured </span>
+        </div>
 
-<h1 class="logo">Medium</h1>
+        <div class="article">
+          <div class="article-info">
+            <p class="author">Data Science Collection · Marina Wyss</p>
 
-<div class="search-box">
+            <h2>Should You Still Learn to Code in 2026?</h2>
 
-<i class="fa-solid fa-magnifying-glass"></i>
+            <p class="desc">The answer isn't as obvious as it used to be.</p>
 
-<input type="text" placeholder="Search">
+            <div class="stats">
+              <span>⭐ 3.8K</span>
 
-</div>
+              <span>💬 205</span>
 
-</div>
+              <span>🔁 119</span>
+            </div>
+          </div>
 
-<div class="nav-right">
+          <div class="article-image">
+            <img
+              src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0wKIAESzc0Bj0dDqNLUUvg.png"
+              alt="Illustration for article about learning to code"
+            />
+          </div>
+        </div>
 
-<button class="app-btn">
-<i class="fa-solid fa-mobile-screen"></i>
-Get App
-</button>
+        <div class="article">
+          <div class="article-info">
+            <p class="author">Michal Malewicz · May 27</p>
 
-<button class="write-btn">
-<i class="fa-regular fa-pen-to-square"></i>
-Write
-</button>
+            <h2>UI Design Direction 2026–2027</h2>
 
-<i class="fa-regular fa-bell"></i>
+            <p class="desc">
+              UI is already exploring exciting new design trends.
+            </p>
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*gasaRNc3_X8K96F58zKyvw.jpeg" class="profile" alt="Profile avatar">
+            <div class="stats">
+              <span>⭐ 889</span>
 
-</div>
+              <span>💬 15</span>
 
-</header>
+              <span>🔁 18</span>
+            </div>
+          </div>
 
+          <div class="article-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnh1ExKhTGF1ytpm0nxmZbb5wE7-RmFWrifxBVNp5ww&s=10"
+              alt="UI design article illustration"
+            />
+          </div>
+        </div>
 
+        <div class="article">
+          <div class="article-info">
+            <p class="author">John Doe · Jun 10</p>
 
-<div class="container">
+            <h2>Why JavaScript Still Dominates Web Development</h2>
 
+            <p class="desc">
+              A deep look into the future of frontend development.
+            </p>
 
+            <div class="stats">
+              <span>⭐ 2.2K</span>
 
-<aside class="sidebar">
+              <span>💬 130</span>
 
-<ul>
+              <span>🔁 60</span>
+            </div>
+          </div>
 
-<li>
-<i class="fa-solid fa-house"></i>
-Home
-</li>
+          <div class="article-image">
+            <img
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RDTYQEsecahTTdd1HAn6Yw.png"
+              alt="JavaScript web development illustration"
+            />
+          </div>
+        </div>
 
-<li>
-<i class="fa-regular fa-bookmark"></i>
-Library
-</li>
+        <!-- ARTICLE 4 -->
 
-<li>
-<i class="fa-regular fa-user"></i>
-Profile
-</li>
+        <div class="article">
+          <div class="article-info">
+            <p class="author">Sarah Smith · Jun 12</p>
 
-<li>
-<i class="fa-regular fa-file-lines"></i>
-Stories
-</li>
+            <h2>React vs Vue in 2026</h2>
 
-<li>
-<i class="fa-solid fa-chart-column"></i>
-Stats
-</li>
+            <p class="desc">Which framework should developers choose today?</p>
 
-</ul>
+            <div class="stats">
+              <span>⭐ 1.5K</span>
 
-<hr>
+              <span>💬 90</span>
 
-<div class="following">
+              <span>🔁 40</span>
+            </div>
+          </div>
 
-<h3>Following</h3>
+          <div class="article-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMbZUIe1eOfYsk9IaT92HJU_V2HlmKy5FRpNYecduEg&s=10"
+              alt="React and Vue comparison illustration"
+            />
+          </div>
+        </div>
+      </main>
 
-<p>
-Find writers and publications to follow.
-</p>
+      <aside class="right-sidebar">
+        <h2>Staff Picks</h2>
 
-<a href="#">
-See Suggestions
-</a>
+        <div class="staff-card">
+          <p>In Prism & ...</p>
 
-</div>
+          <h4>
+            Our LGBT Literary Heroes Had a Pride That Took Boldness and Guts
+          </h4>
+        </div>
 
-</aside>
+        <div class="staff-card">
+          <p>UX Collective</p>
 
-<main class="content">
+          <h4>We used to log off</h4>
+        </div>
 
-<div class="tabs">
+        <div class="staff-card">
+          <p>KYO</p>
 
-<span class="active">
-For You
-</span>
+          <h4>The Carp Flies for Boys. The Doll Sits for Girls.</h4>
+        </div>
 
-<span>
-Featured
-</span>
+        <hr />
 
-</div>
+        <h2>Recommended Topics</h2>
 
+        <div class="topics">
+          <button>Programming</button>
 
+          <button>JavaScript</button>
 
-<div class="article">
+          <button>React</button>
 
-<div class="article-info">
+          <button>Node.js</button>
 
-<p class="author">
-Data Science Collection · Marina Wyss
-</p>
+          <button>AI</button>
 
-<h2>
-Should You Still Learn to Code in 2026?
-</h2>
+          <button>Technology</button>
 
-<p class="desc">
-The answer isn't as obvious as it used to be.
-</p>
+          <button>Web Development</button>
 
-<div class="stats">
+          <button>Design</button>
+        </div>
 
-<span>⭐ 3.8K</span>
+        <hr />
 
-<span>💬 205</span>
+        <h2>Who To Follow</h2>
 
-<span>🔁 119</span>
+        <div class="follow-user">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*AT6ZUXqMPQu5Th0v"
+            alt="John Smith profile picture"
+          />
 
-</div>
+          <div>
+            <h4>John Smith</h4>
 
-</div>
+            <p>Frontend Developer</p>
+          </div>
 
-<div class="article-image">
+          <button>Follow</button>
+        </div>
 
-<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0wKIAESzc0Bj0dDqNLUUvg.png" alt="Illustration for article about learning to code">
+        <div class="follow-user">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ZHGMErDEPJfMM3Z4WVyDvw.png"
+            alt="Sarah Parker profile picture"
+          />
 
-</div>
+          <div>
+            <h4>Sarah Parker</h4>
 
-</div>
+            <p>UI/UX Designer</p>
+          </div>
 
+          <button>Follow</button>
+        </div>
 
+        <div class="follow-user">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*d0kJbqOEXYdHEDl5NbZgiQ.png"
+            alt="Alex Brown profile picture"
+          />
 
-<div class="article">
+          <div>
+            <h4>Alex Brown</h4>
 
-<div class="article-info">
+            <p>Software Engineer</p>
+          </div>
 
-<p class="author">
-Michal Malewicz · May 27
-</p>
+          <button>Follow</button>
+        </div>
+      </aside>
+    </div>
 
-<h2>
-UI Design Direction 2026–2027
-</h2>
-
-<p class="desc">
-UI is already exploring exciting new design trends.
-</p>
-
-<div class="stats">
-
-<span>⭐ 889</span>
-
-<span>💬 15</span>
-
-<span>🔁 18</span>
-
-</div>
-
-</div>
-
-<div class="article-image">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnh1ExKhTGF1ytpm0nxmZbb5wE7-RmFWrifxBVNp5ww&s=10" alt="UI design article illustration">
-
-</div>
-
-</div>
-
-<div class="article">
-
-<div class="article-info">
-
-<p class="author">
-John Doe · Jun 10
-</p>
-
-<h2>
-Why JavaScript Still Dominates Web Development
-</h2>
-
-<p class="desc">
-A deep look into the future of frontend development.
-</p>
-
-<div class="stats">
-
-<span>⭐ 2.2K</span>
-
-<span>💬 130</span>
-
-<span>🔁 60</span>
-
-</div>
-
-</div>
-
-<div class="article-image">
-
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RDTYQEsecahTTdd1HAn6Yw.png" alt="JavaScript web development illustration">
-
-</div>
-
-</div>
-
-<!-- ARTICLE 4 -->
-
-<div class="article">
-
-<div class="article-info">
-
-<p class="author">
-Sarah Smith · Jun 12
-</p>
-
-<h2>
-React vs Vue in 2026
-</h2>
-
-<p class="desc">
-Which framework should developers choose today?
-</p>
-
-<div class="stats">
-
-<span>⭐ 1.5K</span>
-
-<span>💬 90</span>
-
-<span>🔁 40</span>
-
-</div>
-
-</div>
-
-<div class="article-image">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMbZUIe1eOfYsk9IaT92HJU_V2HlmKy5FRpNYecduEg&s=10" alt="React and Vue comparison illustration">
-
-</div>
-
-</div>
-
-</main>
-
-
-
-<aside class="right-sidebar">
-
-<h2>Staff Picks</h2>
-
-<div class="staff-card">
-
-<p>In Prism & ...</p>
-
-<h4>
-Our LGBT Literary Heroes Had a Pride That Took Boldness and Guts
-</h4>
-
-</div>
-
-<div class="staff-card">
-
-<p>UX Collective</p>
-
-<h4>
-We used to log off
-</h4>
-
-</div>
-
-<div class="staff-card">
-
-<p>KYO</p>
-
-<h4>
-The Carp Flies for Boys. The Doll Sits for Girls.
-</h4>
-
-</div>
-
-<hr>
-
-<h2>Recommended Topics</h2>
-
-<div class="topics">
-
-<button>Programming</button>
-
-<button>JavaScript</button>
-
-<button>React</button>
-
-<button>Node.js</button>
-
-<button>AI</button>
-
-<button>Technology</button>
-
-<button>Web Development</button>
-
-<button>Design</button>
-
-</div>
-
-<hr>
-
-<h2>Who To Follow</h2>
-
-<div class="follow-user">
-
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*AT6ZUXqMPQu5Th0v" alt="John Smith profile picture">
-
-<div>
-
-<h4>John Smith</h4>
-
-<p>Frontend Developer</p>
-
-</div>
-
-<button>Follow</button>
-
-</div>
-
-<div class="follow-user">
-
-<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ZHGMErDEPJfMM3Z4WVyDvw.png" alt="Sarah Parker profile picture">
-
-<div>
-
-<h4>Sarah Parker</h4>
-
-<p>UI/UX Designer</p>
-
-</div>
-
-<button>Follow</button>
-
-</div>
-
-<div class="follow-user">
-
-<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*d0kJbqOEXYdHEDl5NbZgiQ.png" alt="Alex Brown profile picture">
-
-<div>
-
-<h4>Alex Brown</h4>
-
-<p>Software Engineer</p>
-
-</div>
-
-<button>Follow</button>
-
-</div>
-
-</aside>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
